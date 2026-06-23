@@ -59,6 +59,7 @@ jobs:
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO \
             ARCHS=arm64 ONLY_ACTIVE_ARCH=NO \
+            ENABLE_DEBUG_DYLIB=NO \
             build
 
       - name: Package the .app
