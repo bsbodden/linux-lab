@@ -16,10 +16,8 @@ targets:
       base:
         PRODUCT_NAME: LinuxCommands
         PRODUCT_BUNDLE_IDENTIFIER: dev.kmpilot.linux
-        GENERATE_INFOPLIST_FILE: YES
-        INFOPLIST_KEY_CFBundleDisplayName: "Linux Commands"
-        INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        # explicit Info.plist — must carry CADisableMinimumFrameDurationOnPhone (Compose iOS sanity check)
+        INFOPLIST_FILE: iosApp/Info.plist
         MARKETING_VERSION: "1.0"
         CURRENT_PROJECT_VERSION: "1"
         SWIFT_VERSION: "5.0"
